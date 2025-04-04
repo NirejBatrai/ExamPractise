@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgb(245, 242, 223);
+}
+
+hr {
+  background-color: rgb(149, 121, 121);
+  height: 1px;
+  border: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  background-color: rgb(245, 242, 223);
+  margin: 1em;
+  padding: 1em;
+}
+.nav-items {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 2em;
+}
+
+.home {
+  font-size: larger;
+  color: aliceblue;
+}
+
+ul {
+  display: flex;
+
+  list-style: none;
+  gap: 1em;
+  text-transform: uppercase;
+  margin: 0.5em;
+}
+.line {
+  width: 2em;
+  height: 6px;
+  margin-bottom: 4px;
+  border: 2px solid rgb(47, 4, 97);
+  background-color: rgb(47, 4, 97);
+}
+
+.ham-burger {
+  margin: 3em;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.main {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.hero {
+  padding: 6rem;
+
+  background-image: url(/room.png);
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  /* position: relative; */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  /* margin-right: 10em; */
+}
+
+.hero-container {
+  position: relative;
+  /* width: 30em; */
+  /* height: 40em; */
+  /* justify-items: start; */
+  font-size: 0.7rem;
+  margin-top: 5em;
+  font-weight: 300;
+  z-index: 1;
+  /* background-color: red; */
+}
+/* Styling part */
+
+.hero-container p {
+  font-size: larger;
+  width: 15em;
+}
+.hero-container h1 {
+  font-size: 2em;
+  margin-top: 0.2em;
+  text-shadow: 1px 1px 1px rgb(100, 99, 78);
+} /* Styling part */
+
+.hero-container p {
+  font-size: larger;
+}
+.hero-container h1 {
+  font-size: 2em;
+  margin-top: 0.2em;
+  text-shadow: 1px 1px 1px rgb(100, 99, 78);
+}
+.hero-container h2 {
+  font-size: 1em;
+  text-shadow: 1px 1px 1px rgb(161, 161, 151);
+}
+.hero-container button {
+  width: 15em;
+  border-radius: 1em;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: rgb(84, 78, 78);
+  color: white;
+}
+.hero-container h2 {
+  font-size: 1em;
+  text-shadow: 1px 1px 1px rgb(161, 161, 151);
+}
+.hero-container button {
+  width: 15em;
+  border-radius: 1em;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: rgb(84, 78, 78);
+  color: white;
+}
+.overlay {
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(255, 245, 245, 0.87) 0%,
+    rgba(255, 255, 255, 0.5) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.service ul {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  margin: 2em;
+}
+
+.card-container {
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 1em auto;
+}
+
+.card img {
+  width: 26em;
+  height: 20em;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5em;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer h2 {
+  font-weight: 100;
+  font-size: bold;
+}
+.footer p {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1008px) {
+  .nav ul {
+    display: none;
+  }
+  .nav ul.active {
+    display: flex;
+  }
+
+  .ham-burger {
+    position: relative;
+    display: flex;
+    margin-right: auto;
+    padding-left: 5em;
+  }
+  .hero {
+    padding: 4rem;
+    background-size: cover;
+
+    position: relative;
+  }
+  .hero-container {
+    width: 90%;
+    margin-top: 5em;
+  }
+
+  .hero-container p {
+    font-size: 1rem;
+  }
+  .hero-container h1 {
+    font-size: 1.5em;
+  }
+  .hero-container h2 {
+    font-size: 0.9em;
+  }
+  .hero-container button {
+    width: 10em;
+    border-radius: 1em;
+    padding: 0.5em 0.5em;
+    margin-top: 1em;
+    background-color: rgb(84, 78, 78);
+    color: white;
+  }
+
+  .card-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .card {
+    margin: 1em auto;
+  }
+
+  .card img {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 0.5em;
+  }
+  .service3 {
+    display: none;
+  }
+}
